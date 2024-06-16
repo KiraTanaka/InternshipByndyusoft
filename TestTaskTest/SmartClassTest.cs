@@ -1,4 +1,4 @@
-using TestTask;
+п»їusing TestTask;
 
 namespace TestTaskTest
 {
@@ -6,7 +6,7 @@ namespace TestTaskTest
     public class SmartClassTest
     {
         /// <summary>
-        /// Тест проверки, если один минимальный элемент в начале, другой в конце массива
+        /// РўРµСЃС‚ РїСЂРѕРІРµСЂРєРё, РµСЃР»Рё РѕРґРёРЅ РјРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РІ РЅР°С‡Р°Р»Рµ, РґСЂСѓРіРѕР№ РІ РєРѕРЅС†Рµ РјР°СЃСЃРёРІР°
         /// </summary>
         [Test]
         public void SumTwoMinElements_ElementsInBeginAndEnd()
@@ -18,7 +18,7 @@ namespace TestTaskTest
             Assert.That(result, Is.EqualTo(expected));
         }
         /// <summary>
-        /// Тест проверки, если один минимальный элемент в середине, другой в конце массива
+        /// РўРµСЃС‚ РїСЂРѕРІРµСЂРєРё, РµСЃР»Рё РѕРґРёРЅ РјРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РІ СЃРµСЂРµРґРёРЅРµ, РґСЂСѓРіРѕР№ РІ РєРѕРЅС†Рµ РјР°СЃСЃРёРІР°
         /// </summary>
         [Test]
         public void SumTwoMinElements_ElementsInMiddleAndEnd()
@@ -30,7 +30,7 @@ namespace TestTaskTest
             Assert.That(result, Is.EqualTo(expected));
         }
         /// <summary>
-        /// Тест проверки, если оба минимальных элемента в конце массива
+        /// РўРµСЃС‚ РїСЂРѕРІРµСЂРєРё, РµСЃР»Рё РѕР±Р° РјРёРЅРёРјР°Р»СЊРЅС‹С… СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅС†Рµ РјР°СЃСЃРёРІР°
         /// </summary>
         [Test]
         public void SumTwoMinElements_BothElementsInEnd()
@@ -42,7 +42,7 @@ namespace TestTaskTest
             Assert.That(result, Is.EqualTo(expected));
         }     
         /// <summary>
-        /// Тест проверки, что функция возвращает null, если передан null
+        /// РўРµСЃС‚ РїСЂРѕРІРµСЂРєРё, С‡С‚Рѕ С„СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ null, РµСЃР»Рё РїРµСЂРµРґР°РЅ null
         /// </summary>
         [Test]
         public void SumTwoMinElements_ReturnNull_IfNullArray()
@@ -53,7 +53,7 @@ namespace TestTaskTest
             Assert.That(result, Is.EqualTo(expected));
         }
         /// <summary>
-        /// Тест проверки, что функция возвращает null, если передан массив с одним элементом
+        /// РўРµСЃС‚ РїСЂРѕРІРµСЂРєРё, С‡С‚Рѕ С„СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ null, РµСЃР»Рё РїРµСЂРµРґР°РЅ РјР°СЃСЃРёРІ СЃ РѕРґРЅРёРј СЌР»РµРјРµРЅС‚РѕРј
         /// </summary>
         [Test]
         public void SumTwoMinElements_ReturnNull_IfOneElementInArray()

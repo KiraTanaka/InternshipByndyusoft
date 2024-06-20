@@ -64,5 +64,17 @@ namespace TestTaskTest
             int? result = smartClass.SumTwoMinElements(arr);
             Assert.That(result, Is.EqualTo(expected));
         }
+        /// <summary>
+        /// Тест проверки, что функция возвращает null, если при суммировании элементов произошло переполнение
+        /// </summary>
+        [Test]
+        public void SumTwoMinElements_ReturnNull_IfOverflow()
+        {
+            SmartClass smartClass = new SmartClass();
+            int[] arr = [int.MaxValue, int.MaxValue];
+            int? expected = null;
+            int? result = smartClass.SumTwoMinElements(arr);
+            Assert.That(result, Is.EqualTo(expected));
+        }
     }
 }

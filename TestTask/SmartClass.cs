@@ -8,6 +8,10 @@ namespace TestTask
 {
     public class SmartClass
     {
+
+        /// <summary>
+        /// Суммирует два числа, проверяя сумму на переполнение.
+        /// </summary>
         private int? CheckedSumElements(int firstElement,int secondElement)
         {
             try
